@@ -1,12 +1,8 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
 env/
 venv/
@@ -18,42 +14,45 @@ build/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# Pytest
 .cache
 pytest-debug.log
-
-# mypy
 .mypy_cache/
 .dmypy.json
 dmypy.json
-
-# pyenv
 .python-version
-
-# pipenv
 Pipfile.lock
-
-# conda
 conda-meta/
 envs/
-
-# Jupyter Notebook
 .ipynb_checkpoints
-
-# VS Code
 .vscode/
-.history/
-
-# PyCharm
 .idea/
-
-# Local env files
 .env
 *.env
-
-# MacOS
 .DS_Store
-
-# Windows
 Thumbs.db
+
+# React
+build/
+dist/
+*.prod.js
+*.prod.css
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+*.env
+coverage/
+node_modules/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.pem
+*.p12
+*.key
+*.crt
+*.cer
+server/routes/__pycache__/auth_routes.cpython-312.pyc
+server/server/

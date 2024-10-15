@@ -5,15 +5,15 @@ import axios from 'axios';
 export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
-    const [token, setToken] = useState(null);
+    const [token, setToken] = useState(localStorage.getItem('token') || '');
 
-    const login = (newToken) => {
-        setToken(newToken);
-        localStorage.setItem('token', newToken);
+    const login = (userToken) => {
+        setToken(userToken);
+        localStorage.setItem('token', userToken);
     };
 
     const logout = () => {
-        setToken(null);
+        setToken("");
         localStorage.removeItem('token');
     };
 

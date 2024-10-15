@@ -2,6 +2,7 @@
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import create_access_token
 from flask_bcrypt import Bcrypt
+# from app import db
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
@@ -15,7 +16,6 @@ auth_bp = Blueprint('auth', __name__)
 # Initialize Bcrypt for password hashing
 bcrypt = Bcrypt()
 
-# MongoDB connection URI
 uri = os.getenv('MONGODB_URI')  # Store your MongoDB URI in an environment variable
 client = MongoClient(uri)
 db = client[os.getenv('DB')]  # Replace with your database name
